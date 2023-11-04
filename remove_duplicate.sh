@@ -2,7 +2,7 @@
 
 # Set the source directory and backup directory
 source_dir="$HOME"
-backup_dir="/path/to/backup"
+backup_dir="/home/jpell/backup"
 
 # Create the backup directory if it doesn't exist
 mkdir -p "$backup_dir"
