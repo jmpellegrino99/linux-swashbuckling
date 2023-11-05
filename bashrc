@@ -34,19 +34,6 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
 fi
 
-# Aliases:
-alias l='ls'
-alias c='clear'
-alias e='exit'
-alias trans='trans -b'
-alias fox='python3 ~/Github/linux-swashbuckling/fox.py'
-alias token='xclip -sel clip < ~/Github/token.txt'
-alias vd='mv ~/Downloads/VideoDownloader/* ~/Videos/'
-alias gh='cd ~/Github'
-alias ffmpeg='ffmpeg -i' #Converts [FILENAME.mp4] [NEWFILENAME.mp3]
-alias ip='ifconfig'
-alias vget='yt-dlp'
-
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
     . /usr/share/bash-completion/bash_completion
@@ -54,5 +41,26 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Aliases:
+alias l='ls'
+alias c='clear'
+alias e='exit'
+alias tr='trans -b'
+alias fox='python3 ~/Github/linux-swashbuckling/fox.py'
+alias token='xclip -sel clip < ~/Github/token.txt'
+alias vd='mv ~/Downloads/VideoDownloader/* ~/Videos/'
+alias gh='cd ~/Github'
+alias ffmpeg='ffmpeg -i' #Converts [FILENAME.mp4] [NEWFILENAME.mp3]
+alias ip='ifconfig'
+alias vget='yt-dlp'
 alias size='du -sh'
 alias samba_status='sudo systemctl status smbd'
+alias la='source /home/jpell/Scripts/la.sh'
+alias gitpull='/home/jpell/Scripts/gitpull.sh'
+alias copy='xclip -selection clipboard <'
+alias sort='~/Scripts/sort.sh'
+alias shred='shred -zvu -n 1'
+alias trash='trash'
+alias publicip='curl ifconfig.me'
+

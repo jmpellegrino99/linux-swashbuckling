@@ -5,7 +5,7 @@ import time
 # Define the URL of the website you want to scrape
 url = "https://www.foxnews.com/"
 
-time_string = " ".join([time.ctime().split(" ")[i] for i in [1,2,3]])
+time_string = time.ctime()
 
 # Send an HTTP GET request to the URL
 response = requests.get(url)
