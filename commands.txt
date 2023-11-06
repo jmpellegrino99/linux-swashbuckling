@@ -1,0 +1,18 @@
+#Samba file server
+sudo systemctl status smbd
+sudo systemctl start smbd
+sudo systemctl stop smbd
+
+#Alter sudo permissions
+sudo visudo
+
+
+#Splice an MP3 file
+ffmpeg -i input.mp3 -ss 00:01:00 -to 00:02:00 -c copy output.mp3
+
+#Splice an MP4 FILE
+ffmpeg -i trebek.mp4 -ss 00:00:20 -to 00:00:22 -c:v libx264 -c:a copy output.mp4
+
+#Convert MP4 to GIF
+    #sudo apt-get install imagemagick
+ffmpeg -i input.mp4 -vf "fps=10,scale=320:-1:flags=lanczos" -c:v pam -f image2pipe - | convert -delay 10 - -loop 0 -layers Optimize output.gif
