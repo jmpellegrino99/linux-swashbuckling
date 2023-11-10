@@ -1,13 +1,16 @@
 #!/bin/bash
 
-# Ask the user for the name of the video file
-read -p "Enter the name of the video file: " video_file
+while true; do
+    # Ask the user for the name of the video file
+    read -p "Enter the name of the video file: " video_file
 
-# Check if the file exists
-if [ ! -f "$video_file" ]; then
-    echo "File not found. Exiting."
-    exit 1
-fi
+    # Check if the file exists and is an MP4 file
+    if [ -f "$video_file" ] && [ "${video_file##*.}" == "mp4" ]; then
+        break
+    else
+        echo "Invalid file. Please enter a valid MP4 file."
+    fi
+done
 
 # Ask the user for the start point
 read -p "Enter the start point (in seconds): " start_point
