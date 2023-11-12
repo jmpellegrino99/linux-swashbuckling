@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import pyperclip
 
 input = "input.mp3"

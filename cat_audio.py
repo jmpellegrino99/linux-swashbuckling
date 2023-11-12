@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import pyperclip as clip
 
 lst = [f"lisamarty{i}.mp3" for i in range(1,7)]
