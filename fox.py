@@ -14,10 +14,10 @@ response = requests.get(url)
 # Check if the request was successful (status code 200)
 if response.status_code == 200:
     # Parse the HTML content of the page using BeautifulSoup
-    soup = BeautifulSoup(response.content, 'html.parser')
+    soup = BeautifulSoup(response.content, "html.parser")
 
     # Find the first <h3> element on the page
-    first_h3 = soup.find('h3')
+    first_h3 = soup.find("h3")
 
     # Check if an <h3> element was found
     if first_h3:
