@@ -1,0 +1,16 @@
+export GREP_OPTIONS='--color=auto'
+
+alias clear_downloads='rm -rf ~/Downloads/*'
+alias empty_trash='rm -r ~/.Trash/*'
+alias reset_launchpad='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
+alias l='ls'
+alias c='clear'
+alias e='exit'
+alias fox='python3 ~/Github/linux-swashbuckling/fox.py'
+alias copy_apps="ls /Applications > ~/applications.txt; sed -i '' 's/\.app//g' applications.txt"
+alias bl='system_profiler SPBluetoothDataType'
+alias tr='trans -b'
+alias zip='zip -e'
+alias text='open -a TextEdit'alias gitpull='source ~/Github/gitpull.sh'
+alias icloud='cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/'
+alias o='open ~/.'
