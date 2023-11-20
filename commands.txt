@@ -21,3 +21,7 @@ java -jar RuneLite.jar
 
 #View all system commands, like python3, grep, mv, etc.:
 ls /usr/bin
+
+#Remove a package installed via sudo apt-get install
+sudo apt-get remove --purge <package_name>
+sudo apt-get autoremove
