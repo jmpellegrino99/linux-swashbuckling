@@ -12,8 +12,8 @@ font:
 # Colors
 colors:
   primary:
-    background: '0x1E1E1E'
-    foreground: '0xEBDBB2'
+    background: '0xffffff'
+    foreground: '0x4d4d4c'
 
   # ANSI colors
   normal:
