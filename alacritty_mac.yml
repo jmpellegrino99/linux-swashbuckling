@@ -1,0 +1,77 @@
+# Example Advanced Alacritty Configuration
+
+# Font settings
+font:
+  size: 14.0
+  family: 'Hack Nerd Font'
+  style: Regular
+  offset:
+    x: 0
+    y: 0
+
+# Colors
+colors:
+  primary:
+    background: '0x1E1E1E'
+    foreground: '0xEBDBB2'
+
+  # ANSI colors
+  normal:
+    black:   '0x282828'
+    red:     '0xCC241D'
+    green:   '0x98971A'
+    yellow:  '0xD79921'
+    blue:    '0x458588'
+    magenta: '0xB16286'
+    cyan:    '0x689D6A'
+    white:   '0xA89984'
+
+  bright:
+    black:   '0x928374'
+    red:     '0xFB4934'
+    green:   '0xB8BB26'
+    yellow:  '0xFABD2F'
+    blue:    '0x83A598'
+    magenta: '0xD3869B'
+    cyan:    '0x8EC07C'
+    white:   '0xEBDBB2'
+
+# Cursor settings
+cursor:
+  style: Block
+  unfocused_hollow: true
+  vi_mode_style: Block
+  vi_mode_cursor_type: Normal
+
+# Visual Bell
+visual_bell:
+  duration: '50ms'
+  intensity: 0.7
+  color: '0xFF5733'
+
+# Scrolling
+scrolling:
+  history_size: 0
+  history: 0
+  multiplier: 3
+  speed: 2.0
+  clear_scrollback_on_clear: true
+  clear_scrollback_delay: 0.0
+
+# Window settings
+window:
+  padding:
+    x: 2
+    y: 2
+  hide_title: true
+  opacity: 0.90
+
+# Tab settings
+tabs:
+  enabled: true
+  tabspaces: 2
+
+# URL handling
+url:
+  launcher: 'open'
+  browser: 'default'
