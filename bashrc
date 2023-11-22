@@ -55,6 +55,7 @@ alias gitpull='/home/jpell/Scripts/gitpull.sh'
 alias ip='ifconfig'
 alias linux='cd ~/Github/linux-swashbuckling'
 alias l='ls'
+alias lsl='ls -lhS' #l = long list, h = file size, S = sort by size
 alias mejor='cd ~/Scripts/MejorCopy'
 alias music='cd ~/Music; clear'
 alias publicip='curl ifconfig.me'
