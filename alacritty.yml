@@ -5,7 +5,7 @@ font:
   size: 14.0
 
 scrolling:
-  history: 0
+  history: 1000
 
 colors:
   # Default colors
@@ -15,7 +15,7 @@ colors:
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
     text: '0xffffff'
-    cursor: '0x4d4d4c'
+    cursor: '#a83232'
   # Normal colors
   normal:
     black:   '0xffffff'

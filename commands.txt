@@ -25,3 +25,6 @@ ls /usr/bin
 #Remove a package installed via sudo apt-get install
 sudo apt-get remove --purge <package_name>
 sudo apt-get autoremove
+
+#Find the location of a run-command
+ls /usr/bin | grep "{command_name}"
