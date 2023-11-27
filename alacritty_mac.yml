@@ -9,32 +9,35 @@ font:
     x: 0
     y: 0
 
-# Colors
 colors:
+  # Default colors
   primary:
-    background: '0xffffff'
-    foreground: '0x4d4d4c'
-
-  # ANSI colors
+    background: '#2F343F'
+    foreground: '#E3E3EA'
+  # Colors the cursor will use if `custom_cursor_colors` is true
+  cursor:
+    text: '#f542aa'
+    cursor: '#cf1919'
+  # Normal colors
   normal:
-    black:   '0x282828'
-    red:     '0xCC241D'
-    green:   '0x98971A'
-    yellow:  '0xD79921'
-    blue:    '0x458588'
-    magenta: '0xB16286'
-    cyan:    '0x689D6A'
-    white:   '0xA89984'
-
+    black:   '0xffffff'
+    red:     '0xc82829'
+    green:   '0x718c00'
+    yellow:  '0xeab700'
+    blue:    '0x4271ae'
+    magenta: '0x8959a8'
+    cyan:    '0x3e999f'
+    white:   '0x4d4d4c'
+  # Bright colors
   bright:
-    black:   '0x928374'
-    red:     '0xFB4934'
-    green:   '0xB8BB26'
-    yellow:  '0xFABD2F'
-    blue:    '0x83A598'
-    magenta: '0xD3869B'
-    cyan:    '0x8EC07C'
-    white:   '0xEBDBB2'
+    black:   '0x8e908c'
+    red:     '0xf5871f'
+    green:   '0xe0e0e0'
+    yellow:  '0xd6d6d6'
+    blue:    '0x969896'
+    magenta: '0x282a2e'
+    cyan:    '0xa3685a'
+    white:   '0x1d1f21'
 
 # Cursor settings
 cursor:
@@ -51,8 +54,8 @@ visual_bell:
 
 # Scrolling
 scrolling:
-  history_size: 0
-  history: 0
+  history_size: 50
+  history: 50
   multiplier: 3
   speed: 2.0
   clear_scrollback_on_clear: true
