@@ -39,7 +39,6 @@ fi
 
 export GREP_OPTIONS='--color=auto'
 
-alias aidan='open /Users/joepellegrino/Library/CloudStorage/GoogleDrive-jmpellegrino99@gmail.com/My\ Drive/Tutoring/Aidan\ Kelemen'
 alias bl='system_profiler SPBluetoothDataType'
 alias c='clear'
 alias clear_downloads='rm -rf ~/Downloads/*'
