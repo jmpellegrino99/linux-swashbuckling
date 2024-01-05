@@ -13,7 +13,7 @@ ffmpeg -i input.mp3 -ss 00:01:00 -to 00:02:00 -c copy output.mp3
 ffmpeg -i trebek.mp4 -ss 00:00:20 -to 00:00:22 -c:v libx264 -c:a copy output.mp4
 
 #Convert MP4 to GIF
-    #sudo apt-get install imagemagick
+sudo apt-get install imagemagick
 ffmpeg -i output.mp4 -vf "fps=10,scale=320:-1:flags=lanczos" -c:v pam -f image2pipe - | convert -delay 10 - -loop 0 -layers Optimize work.gif
 
 #RuneLite (RUN)
@@ -23,7 +23,7 @@ java -jar RuneLite.jar
 ls /usr/bin
 
 #Remove a package installed via sudo apt-get install
-sudo apt-get remove --purge <package_name>
+sudo apt-get remove --purge [package_name]
 sudo apt-get autoremove
 
 #Find the location of a run-command
@@ -31,3 +31,27 @@ ls /usr/bin | grep "{command_name}"
 
 #Make the PopOS dock transparent:
 gsettings set org.gnome.shell.extensions.dash-to-dock background-opacity 0.4
+
+#View hard disk usage:
+df -h
+ncdu [/path/to/directory]
+
+#Determine system architecture:
+uname -m
+
+#Configure the Wine environment
+wine --version
+winecfg
+
+#Calculate the hash signature of a file
+sha256sum [file_name]
+
+#Find the .desktop file for a program:
+ls /usr/share/applications
+#Identify the file type you want:
+file --mime-type -b filename.jpg
+#Set the program as the default to open it:
+xdg-mime default [file.desktop] image/jpeg
+
+#Pipe the output of an HTML file to a PDF using Chrome:
+google-chrome --headless --disable-gpu --print-to-pdf=[output.pdf] [input.html] 
