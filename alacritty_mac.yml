@@ -54,8 +54,8 @@ visual_bell:
 
 # Scrolling
 scrolling:
-  history_size: 50
-  history: 50
+  history_size: 1000
+  history: 1000
   multiplier: 3
   speed: 2.0
   clear_scrollback_on_clear: true
